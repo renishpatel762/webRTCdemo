@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="favicon.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC Demo</title>
+  </head>
+  <body>
+    <!-- <h2>1. Start your Webcam</h2> -->
+    <button style="margin-left: 25vw;" id="webcamButton">Start camera & microphone</button>
+        <!-- <h2>2. Create a new Call</h2> -->
+        <button style="margin-left: 50px; margin-right: 20px;" id="callButton" disabled>Create new meet</button>
+        <h2 style="display: inline; margin-right: 20px;">or join</h2>
+        <!-- <h2>3. Join a Call</h2> -->
+        <!-- <p>Answer the call from a different browser window or device</p> -->
+        <input id="callInput" />
+        <button id="answerButton" disabled>join</button>
+        <button id="hangupButton" disabled>Hangup</button>
+    
+        
+    <div class="videos">
+      <span>
+        <video id="webcamVideo" autoplay playsinline></video>
+        <h3 style="margin-left: 250px; color: green;">Local</h3>
+      </span>
+      <span>
+        <video id="remoteVideo" autoplay playsinline></video>
+        <h3 style="margin-left: 250px; color: blue;">Remote</h3>
+      </span>
+
+    </div>
+
+    
+    <!-- <h2>4. Hangup</h2> -->
+
+
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>
